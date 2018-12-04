@@ -1,0 +1,55 @@
+@import '../Settings/utils.scss';
+
+/* page *
+********/
+
+.l-page {
+    width: 100%;
+    height: 100%;
+}
+
+.page-inner {
+
+}
+
+.page-header {
+    width: 100%;
+}
+
+.page-header-inner {
+
+}
+
+.page-main {
+    width: 100%;
+}
+
+.page-section {
+    position: relative;
+    width: 100%;
+}
+
+.page-section-inner {
+
+}
+
+.page-footer {
+    flex-shrink: 0;
+    width: 100%;
+    background: $color-compassion;
+}
+
+.page-footer-inner {
+    padding: 25px;
+}
+
+.page-footer-text {
+    font-family: 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wght" 300, "wdth" 250;
+    font-size: 14px;
+    color: $color-friendly;
+
+    @media (max-width: 400px) {
+        font-size: 12px;
+    }
+}
