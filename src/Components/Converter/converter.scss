@@ -43,6 +43,7 @@
     padding: 20px 25px;
     width: 100%;
     font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wdth" 600;
     border-radius: 10px;
     border: none;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2),
@@ -51,7 +52,7 @@
 
     @media (max-width: 768px) {
         padding: 20px;
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
 }
@@ -86,6 +87,7 @@
 
 .converter-btn-text {
     font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wdth" 600;
     text-transform: uppercase;
     color: $color-compassion;
     transition: color 250ms ease-out;
