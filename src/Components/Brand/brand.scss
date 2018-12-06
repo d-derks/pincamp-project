@@ -1,0 +1,28 @@
+@import "../../Settings/utils.scss";
+
+/* brand *
+********/
+
+.b-brand {
+    width: 100%;
+}
+
+.brand-inner {
+    display: block;
+    cursor: pointer;
+}
+
+.brand-title {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.brand-logo {
+    width: 100%;
+}
