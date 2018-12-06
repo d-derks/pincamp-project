@@ -1,23 +1,20 @@
 import React from 'react';
 import './page.css';
+import Pageheader from '../Components/Pageheader';
+import Converter from '../Components/Converter';
+import { Dataconnector } from '../Components/Dataconnector';
 
-export default class Page extends React.PureComponent {
+export default function Page() {
 
-    constructor() {
-        super(...arguments)
-    }
-
-    render() {
-        return(
+    return(
+        <Dataconnector>
             <div className='l-page'>
                 <div className="page-inner">
-                    <header className="page-header">
-                        <div className="page-header-inner">
-                        </div>
-                    </header>
+                    <Pageheader />
                     <main className="page-main">
                         <div className="page-section">
                             <div className="page-section-inner">
+                                <Converter />
                             </div>
                         </div>
                     </main>
@@ -30,6 +27,6 @@ export default class Page extends React.PureComponent {
                     </footer>
                 </div>
             </div>
-        )
-    }
+        </Dataconnector>
+    )
 }
