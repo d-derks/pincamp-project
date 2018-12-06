@@ -1,0 +1,96 @@
+@import '../../Settings/utils.scss';
+
+/* converter *
+********/
+
+.b-converter {
+    align-self: center;
+    margin: auto;
+    width: 100%;
+}
+
+.converter-field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.converter-label {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.converter-input {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+
+    @media (max-width: 768px) {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.converter-input-inner {
+    padding: 20px 25px;
+    width: 100%;
+    font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2),
+    -3px -3px 10px rgba(0,0,0,0.1);
+    background: $color-inspired;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.converter-btn {
+    flex: 1;
+    margin-left: 30px;
+    padding: 20px 25px;
+    background: $color-courageous;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    transition: background 250ms ease-out;
+    cursor: pointer;
+
+    &:hover ,
+    &:focus {
+        background: $color-jolly;
+    }
+
+    &:hover .converter-btn-text,
+    &:focus .converter-btn-text {
+        color: $color-involved;
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+}
+
+.converter-btn-text {
+    font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    text-transform: uppercase;
+    color: $color-compassion;
+    transition: color 250ms ease-out;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
