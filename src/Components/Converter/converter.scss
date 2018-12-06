@@ -40,9 +40,9 @@
 }
 
 .converter-input-inner {
-    padding: 20px 25px;
+    padding: 30px 40px;
     width: 100%;
-    font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font:400 20px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
     font-variation-settings: "wdth" 600;
     border-radius: 10px;
     border: none;
@@ -52,15 +52,19 @@
 
     @media (max-width: 768px) {
         padding: 20px;
-        font-size: 16px;
         text-align: center;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 20px 25px;
+        font-size: 16px;
     }
 }
 
 .converter-btn {
     flex: 1;
     margin-left: 30px;
-    padding: 20px 25px;
+    padding: 30px 40px;
     background: $color-courageous;
     overflow: hidden;
     border: none;
@@ -82,11 +86,14 @@
         margin-left: 0;
         padding: 20px;
     }
+    @media (max-width: 1440px) {
+        padding: 20px 25px;
+    }
 
 }
 
 .converter-btn-text {
-    font:400 16px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font:400 18px/1.5 'Gingham Variable', BlinkMacSystemFont , sans-serif;
     font-variation-settings: "wdth" 600;
     text-transform: uppercase;
     color: $color-compassion;
@@ -95,4 +102,9 @@
     @media (max-width: 768px) {
         font-size: 14px;
     }
+
+    @media (max-width: 1440px) {
+        font-size: 16px;
+    }
+
 }
